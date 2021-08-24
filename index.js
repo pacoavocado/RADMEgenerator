@@ -66,18 +66,7 @@ inquirer
         }
         
     ])
-    .then(({
-        title,
-        about,
-        installation,
-        instructions,
-        authors,
-        uses,
-        frameworks,
-        license,
-        gitname,
-        email
-    }) => {
+    .then((response) => {
 
         const fileName = `README.md`;
 
@@ -104,56 +93,53 @@ inquirer
         </ol>
       </details>
        
-      # ${title}
+      # ${response.title}
       
 
       
       ## About The Project
      
-        ${about}
+        ${response.about}
     
       ### Built With
       
-      * ${frameworks}
-      
+      * ${response.frameworks}
       
       
       <!-- GETTING STARTED -->
       ## Getting Started
       
-     ${instructions}
+     ${response.instructions}
       
       ### Prerequisites
       
      
       ### Installation
+
         ````
-      ${installation}
+      ${response.installation}
       ````
-      1. Clone the repo
-         ``sh
-         git clone https://github.com/pacoavocado/RADMEgenerator.git
-         ``
-      
-      
-      ## Autors
-        ${authors}
+           
+      ## Authors
+
+        ${response.authors}
+
       ## Usage
       
-        ${uses} 
+        ${response.uses} 
 
-      ## Created by ${gitname} on GitHub with node.js  
+      ## Created by ${response.gitname} on GitHub with node.js  
       
       ## License
       
-      Distributed under ${license}. See LICENSE for more information.
+      Distributed under ${response.license}. See LICENSE for more information.
       
       
       
       ## Contact
-        ${email}`
+        ${email}`;
 
-
+        // createNewFile()
 
     fs.writeFile(fileName, readMeString), (err) =>
     err ? console.error(err) : console.log("success?")
