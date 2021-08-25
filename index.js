@@ -93,61 +93,61 @@ inquirer
         </ol>
       </details>
        
-      # ${response.title}
+# ${response.title}
       
 
       
-      ## About The Project
+## About The Project
      
         ${response.about}
     
-      ### Built With
+### Built With
       
       * ${response.frameworks}
       
       
       <!-- GETTING STARTED -->
-      ## Getting Started
+## Getting Started
       
      ${response.instructions}
       
-      ### Prerequisites
+### Prerequisites
       
      
-      ### Installation
+### Installation
 
-        ````
+      \`\`\`\`
       ${response.installation}
-      ````
+      \`\`\`\`
            
-      ## Authors
+## Authors
 
         ${response.authors}
 
-      ## Usage
+## Usage
       
         ${response.uses} 
 
-      ## Created by ${response.gitname} on GitHub with node.js  
+## Created by ${response.gitname} on GitHub with node.js  
       
-      ## License
+## License
       
       Distributed under ${response.license}. See LICENSE for more information.
       
       
       
-      ## Contact
-        ${email}`;
+## Contact
+        ${response.email}`;
 
         // createNewFile()
 
-    fs.writeFile(fileName, readMeString), (err) =>
+    fs.writeFile(fileName, readMeString, (err) =>
     err ? console.error(err) : console.log("success?")
-    });
+    );
 // copy this for the whole HW replace log.txt with README.md
 
 
-
+  })
 
 // TODO: Include packages needed for this application
 
