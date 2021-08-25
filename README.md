@@ -27,15 +27,26 @@
 ## About The Project
      
         This project is to expidite the creation of a README.md file.
+        click the link to see the functionality: https://youtu.be/VjVmgO3RdAU
     
 ## Built With
       
       * HTML
+      * Javascript
+      * node.js
+      * Visual Studio Code
+      * GitHub
       
     
 ## Getting Started
       
-     Dont miss a question or else
+     Enter text based on the prompts so you may quickly generate a README.md.
+
+     open a new integrated terminal in vscode for the file index.js
+
+     enter in command line "node index.js"
+
+     follow the prompts and enter the info requested
       
 
       
@@ -43,7 +54,9 @@
 ## Installation
 
  
-      Clone the repo 
+      Clone the repo
+      
+      https://github.com/pacoavocado/RADMEgenerator.git
     
            
 ## Authors
@@ -69,7 +82,7 @@
         
 ## Acknowledgements        
         
-        no
+      
         
         
         

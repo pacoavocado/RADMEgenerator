@@ -157,21 +157,7 @@ inquirer
     fs.writeFile(fileName, readMeString, (err) =>
     err ? console.error(err) : console.log("success?")
     );
-// copy this for the whole HW replace log.txt with README.md
+
 
 
   })
-
-// TODO: Include packages needed for this application
-
-// TODO: Create an array of questions for user input
-// const questions = [];
-
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
