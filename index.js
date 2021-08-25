@@ -63,6 +63,12 @@ inquirer
             message: 'what is your email?',
             name: "email",
             validate: (value)=>{if(value){return true} else {return 'yo! get ready for all kinds of fishing msgs'}}
+        },
+        {
+            type: 'input',
+            message: 'anybody else to acknowlege?',
+            name: "ack",
+            validate: (value)=>{if(value){return true} else {return 'yo! really only you?'}}
         }
         
     ])
@@ -82,7 +88,6 @@ inquirer
           <li>
             <a href="#getting-started">Getting Started</a>
             <ul>
-              <li><a href="#prerequisites">Prerequisites</a></li>
               <li><a href="#installation">Installation</a></li>
             </ul>
           </li>
@@ -101,24 +106,23 @@ inquirer
      
         ${response.about}
     
-### Built With
+## Built With
       
       * ${response.frameworks}
       
-      
-      <!-- GETTING STARTED -->
+    
 ## Getting Started
       
      ${response.instructions}
       
-### Prerequisites
+
       
      
-### Installation
+## Installation
 
-      \`\`\`\`
+ 
       ${response.installation}
-      \`\`\`\`
+    
            
 ## Authors
 
@@ -128,16 +132,25 @@ inquirer
       
         ${response.uses} 
 
-## Created by ${response.gitname} on GitHub with node.js  
+### Created by ${response.gitname} on GitHub with node.js  
       
 ## License
       
-      Distributed under ${response.license}. See LICENSE for more information.
+### Distributed under ${response.license}. See LICENSE for more information.
       
       
       
 ## Contact
-        ${response.email}`;
+        ${response.email}
+        
+        
+        
+## Acknowledgements        
+        
+        ${response.ack}
+        
+        
+        `;
 
         // createNewFile()
 
