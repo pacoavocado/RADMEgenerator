@@ -74,7 +74,7 @@ inquirer
     ])
     .then((response) => {
 
-        const fileName = `README.md`;
+        const fileName = `genREADME.md`;
 
         const readMeString = `<details open="open">
         <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
